@@ -1,0 +1,254 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .nav-bar
+{
+   
+    /* background-color: yellowgreen; */
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.56);
+}
+
+.nav-bar figure
+{
+    height: 100%;
+}
+.nav-bar figure img
+{
+    width: 65px;
+    height: 100%;
+    vertical-align: top;
+}
+.logo-page
+{
+    
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+.logo-page p
+{
+    font-size: 2.5rem;
+    color: red;
+}
+.nav-bar input
+{
+    width: 700px;
+    height: 40px;
+    font-size: 2rem;
+    outline: none;
+    border: 1px rgba(228, 220, 220, 0.582) solid;
+    border-radius: 8px;
+}
+.nav-bar input:hover
+{
+    box-shadow: 0 0 22px -7px rgba(0,0,0,0.7);;
+}
+.nav-bar .profile-content 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    /* background-color: #fd6766; */
+    margin-right: 25px;
+}
+.nav-bar .profile-content p
+{
+    font-size: 2rem;
+}
+.nav-bar .profile-content span
+{
+    background-image: url("./up-icon.png");
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+
+}
+.profile-content img
+{
+    border-radius: 50px;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    
+}
+.aside
+{
+    
+    grid-column: 1/span 1;
+    grid-row: 1/span 3;
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: repeat(8 ,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: #fd6766;
+    
+    
+}
+.aside .logo-ajustes
+{
+    grid-row: 8 /span 8;
+}
+.aside .logo-home , .logo-trending, .logo-likes, .logo-ajustes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: ;
+}
+.aside span
+{
+    margin-top: 10px;
+}
+
+.aside img
+{
+    width: 50px;
+}
+.card-container-ahora-en-cine
+{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px, 1fr));
+    grid-template-rows: 80px 1fr;
+    justify-items:center;
+    align-items: center;
+    gap: 0 50px;
+    grid-column: 2 /span 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+    background-color: white;
+    
+}
+.card-container-ahora-en-cine .title1
+{
+    
+    margin-left: 50px;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.card-container-ahora-en-cine .card-container{
+    
+    position: relative;
+    grid-row: 2 /span 1;
+    box-shadow: 0 0 22px -7px rgba(0,0,0,0.7);
+}
+.tslp-logo
+{
+    width: 100%;
+    height: 100%;
+}
+.tslp-logo img
+{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.card-container__description
+{
+    position: absolute;
+    top: calc(50% - 1px);
+    bottom: 0;
+    background-color: #fd6766;
+    opacity: 0.7;
+}
+.card-container__description h1
+{
+    color: white;
+    text-align: left;
+    padding: 0 10px;
+    padding-top: 10px;
+    font-size: 2.2rem;
+    
+}
+.card-container__description p
+{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.card-container-aclamadas-por-la-critica
+{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px, 1fr));
+    grid-template-rows: 80px 1fr;
+    justify-items:center;
+    align-items: center;
+    gap: 0 50px;
+    grid-column: 2 /span 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    
+}
+.card-container-aclamadas-por-la-critica .card-container{
+    
+    position: relative;
+    grid-row: 2 /span 1;
+    background-color: peachpuff;
+    box-shadow: 0 0 22px -7px rgba(0,0,0,0.7);
+}
+.card-container-aclamadas-por-la-critica .title2
+{
+    
+    margin-left: 50px;
+    width: 100%;
+    font-size: 1.7rem;
+}
+.card-container-no-de-debes-perder
+{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px, 1fr));
+    grid-template-rows: 80px 1fr;
+    justify-items:center;
+    align-items: center;
+    gap: 0 50px;
+    grid-column: 2 /span 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.card-container-no-de-debes-perder .card-container{
+    
+    position: relative;
+    grid-row: 2 /span 1;
+    background-color: peachpuff;
+    box-shadow: 0 0 22px -7px rgba(0,0,0,0.7);
+}
+.card-container-no-de-debes-perder .title3
+{
+    
+    margin-left: 50px;
+    width: 100%;
+    font-size: 1.7rem;
+}
